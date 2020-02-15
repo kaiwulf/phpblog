@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `entries` (
+  `id` int(11) NOT NULL auto_increment,
+  `date` date NOT NULL default '0000-00-00',
+  `title` text collate utf8_bin NOT NULL,
+  `contents` text collate utf8_bin NOT NULL,
+  `author` text collate utf8_bin NOT NULL,
+  PRIMARY KEY  (`id`)
+)
